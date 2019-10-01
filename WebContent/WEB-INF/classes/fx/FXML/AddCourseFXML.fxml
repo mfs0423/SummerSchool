@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="fx.controller.AddCourseController">
+   <children>
+      <Text layoutX="222.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a Course">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="99.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coursre Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="99.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Time        (hh:mm)" wrappingWidth="148.57227218151093">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="courseName" layoutX="276.0" layoutY="111.0" />
+      <TextField fx:id="time" layoutX="276.0" layoutY="185.0" />
+      <Button fx:id="add" layoutX="148.0" layoutY="280.0" mnemonicParsing="false" onAction="#addCourse" text="ADD">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="370.0" layoutY="280.0" mnemonicParsing="false" onAction="#goBack" text="BACK">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
